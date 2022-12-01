@@ -1,0 +1,196 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container
+{
+  max-width: 1140px;
+  margin: auto;
+}
+.flex
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+
+
+.course
+{
+  font-weight: 700;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 10px; */
+}
+.box
+{
+  height:auto;
+  width: calc(33.33% - 40px);
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: inline-block;
+  margin: 20px;
+}
+.box:hover
+{
+  box-shadow: 0 10px 30px #ddd;
+  cursor: pointer;
+}
+.box img
+{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.v-btn button
+{
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/* ----------------------------------choose css */
+.bg
+{
+  background-color: #F7F7F7;
+}
+.box-1
+{
+  min-height: 304px;
+  width: calc(33.33% - 40px);
+  background-color: white;
+  border-radius: 10px;
+  /* border: 1px solid #ccc; */
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgb(101 101 101 / 10%);
+  display: inline-block;
+  margin: 20px;
+  z-index: 9;
+  padding: 30px;
+}
+.box-1:hover
+{
+  margin-top: 20px;
+}
+.border
+{
+  border-top: 1px solid #ddd;
+}
+.name
+{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: 'rubik';
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.para
+{
+  color: #888888;
+  text-align: center;
+}
+.icon-box
+{
+  border-radius: 100%;
+  /* display: inline-block; */
+  padding: 20px;
+  position: relative;
+  margin-bottom: 1rem!important;
+  height: 100px;
+  width: 100px;
+  /* text-align: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: auto;
+  color: white;
+  background-color: #F6475F;
+}
+.icon-box::before
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 3px solid white;
+  border-radius: 100%;
+  margin: 0px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.icon-box:hover::before
+{
+  opacity: 1;
+  margin: 5px;
+}
+
+/* ----------------------------------------parallax */
+.bg
+{
+  background-image: url(images/counter_bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 1302px;
+  transform: translate3d(0px, -135.5px, 0px);
+  transition: transform 100ms ease 0s;
+  z-index: -1;
+  position: relative;
+  margin-top: 150px;
+}
+.bg::before
+{
+  background-color: rgba(7, 41, 77, 0.70);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.box-3
+{
+  display: inline-block;
+  /* width: calc(33.33% - 10px); */
+  margin: 70px 65px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.image
+{
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+}
+.image img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
